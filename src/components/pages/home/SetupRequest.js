@@ -1,5 +1,7 @@
 import React from "react";
 import electric from "../../../icons/electric.svg";
+import { Input } from "./Input";
+import { Button } from "../../shared/Button";
 export const SetupRequest = () => {
   return (
     <div className="">
@@ -12,14 +14,22 @@ export const SetupRequest = () => {
         <img src={electric} alt="electric" className="w-14" />
       </div>
       <div className="bg-white">
-        <p>ffdfd</p>
-        <p>ffdfd</p>
-        <p>ffdfd</p>
-        <p>ffdfd</p>
-        <p>ffdfd</p>
-        <p>ffdfd</p>
-        <p>ffdfd</p>
-        <p>ffdfd</p>
+        <form className="  ">
+          <Input text="الاسم والكنية" />
+          <Input text="رقم الهاتف" />
+          <Input text="المنطقة" />
+          <Input text="العنوان بالتفصيل" />
+          <div className="px-8 mb-4">
+            <textarea
+              type="text"
+              placeholder="ملاحظة"
+              className=" w-full focus:outline-none p-4 border-b-2 border-gray border-opacity-70"
+            />
+          </div>
+          <div className="px-8">
+            <Button text="ارسل الطلب" otherStyles="w-full mb-8" />
+          </div>
+        </form>
       </div>
     </div>
   );

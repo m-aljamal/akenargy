@@ -4,8 +4,8 @@ import { Box } from "./Box";
 import { SetupRequest } from "./SetupRequest";
 export const AboutSection = () => {
   return (
-    <div className="bg-black py-14">
-      <div className="container md:flex  ">
+    <div className="bg-black pt-14">
+      <div className="container md:flex">
         <div className="text-white xl:w-3/4 lg:w-3/5 md:w-2/4 ml-16">
           <h3 className="text-red">شركة الطاقة والكهرباء</h3>
           <h2 className="text-2xl font-bold mt-3">رؤيا الشركة</h2>

@@ -14,3 +14,7 @@ body {
 .heroImg {
   height: 600px;
 }
+
+.right {
+  right: 48%;
+}
