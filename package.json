@@ -1,0 +1,41 @@
+{
+  "name": "akenergy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "akenergy",
+  "author": "m-aljamal",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "gatsby": "^2.26.1",
+    "gatsby-background-image": "^1.5.1",
+    "gatsby-image": "^2.8.0",
+    "gatsby-plugin-manifest": "^2.9.1",
+    "gatsby-plugin-offline": "^3.7.1",
+    "gatsby-plugin-react-helmet": "^3.7.0",
+    "gatsby-plugin-sharp": "^2.11.2",
+    "gatsby-plugin-sitemap": "^2.9.0",
+    "gatsby-plugin-styled-components": "^3.7.0",
+    "gatsby-source-filesystem": "^2.8.1",
+    "gatsby-transformer-sharp": "^2.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "gatsby-plugin-postcss": "^4.2.0",
+    "postcss": "^8.2.10",
+    "tailwindcss": "^2.1.1"
+  }
+}
