@@ -2,7 +2,7 @@ import React from "react";
 import { socialLink, contacts } from "../../constant/links";
 export const UpperNav = () => {
   return (
-    <div className="bg-black text-red-400 p-2">
+    <div className="bg-black p-2">
       <div class="container flex justify-between items-center	">
         <div className="flex">
           {contacts.map((c, i) => (

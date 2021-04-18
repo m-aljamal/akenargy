@@ -18,3 +18,20 @@ body {
 .right {
   right: 48%;
 }
+
+.gr {
+  background: rgb(228, 115, 94);
+  background: linear-gradient(
+    90deg,
+    rgba(228, 115, 94, 1) 0%,
+    rgba(202, 82, 62, 1) 100%
+  );
+}
+
+.image-tr > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+.image-tr:hover > * {
+  transform: translateY(0);
+}

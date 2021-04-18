@@ -5,7 +5,7 @@ import { Button } from "../../shared/Button";
 export const SetupRequest = () => {
   return (
     <div className="">
-      <div className="flex bg-red text-white text-center justify-around px-4 py-3 rounded-t-lg">
+      <div className="flex gr text-white text-center justify-around px-4 py-3 rounded-t-lg">
         <div>
           <h2 className="font-bold text-2xl">طلب تركيب</h2>
           <p>عداد كهربائي جديد</p>
@@ -14,7 +14,7 @@ export const SetupRequest = () => {
         <img src={electric} alt="electric" className="w-14" />
       </div>
       <div className="bg-white">
-        <form className="  ">
+        <form>
           <Input text="الاسم والكنية" />
           <Input text="رقم الهاتف" />
           <Input text="المنطقة" />
