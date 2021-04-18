@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
 import { links } from "../../constant/links";
-import logo from "../../../icons/Logo-01.svg";
+import logo from "../../../icons/logo.svg";
 export const LinksNav = () => {
   return (
-    <div className="w-screen absolute z-30 bg-gray bg-opacity-75 py-3 ">
+    <div className=" w-full absolute z-30 bg-gray bg-opacity-75 py-3  ">
       <div className="flex justify-between text-white container items-center">
-        <div className="w-64">
-          <img src={logo} alt="logo" />
-        </div>
+        <img src={logo} alt="logo" className="w-1/6" />
         <div>
           {links.map((l, i) => (
             <Link

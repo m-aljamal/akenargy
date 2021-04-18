@@ -19,6 +19,7 @@ module.exports = {
       gray: "#141414",
       black: "#222221",
       white: "#FFFFFF",
+      lightGray: "#353535",
     },
 
     extend: {
