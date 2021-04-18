@@ -5,6 +5,9 @@ import instegram from "../../icons/instegram.svg";
 import telegram from "../../icons/telegram.svg";
 import mail from "../../icons/mail.svg";
 import phone from "../../icons/phone.svg";
+import sitemapIcon1 from "../../icons/sitemap-contect_icon-1.svg";
+import sitemapIcon2 from "../../icons/sitemap-contect_icon-2.svg";
+import sitemapIcon3 from "../../icons/sitemap-contect_icon-3.svg";
 export const links = [
   {
     arText: "الرئيسية",
@@ -15,12 +18,8 @@ export const links = [
     link: "/about",
   },
   {
-    arText: "أخبارنا",
+    arText: "بوابة المشترك",
     link: "/news",
-  },
-  {
-    arText: "السلامة والبيئة",
-    link: "/safty",
   },
 
   {
@@ -67,5 +66,23 @@ export const socialLink = [
   {
     icon: telegram,
     link: "#",
+  },
+];
+
+export const siteMap = [
+  {
+    text: "تركيا-غازي عنتاب-مركز المدينة",
+    title: "الموقع الرئيسي",
+    icon: sitemapIcon3,
+  },
+  {
+    text: contacts[1].text,
+    title: "اﻹيميل",
+    icon: sitemapIcon2,
+  },
+  {
+    text: contacts[0].text,
+    title: "رقم الهاتف",
+    icon: sitemapIcon1,
   },
 ];
