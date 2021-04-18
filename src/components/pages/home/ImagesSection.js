@@ -2,6 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { Image } from "./Image";
 import { Button } from "../../shared/Button";
+import { Title } from "../../shared/Title";
 export const ImagesSection = () => {
   const { images } = useStaticQuery(graphql`
     {
@@ -17,12 +18,8 @@ export const ImagesSection = () => {
     }
   `);
   return (
-    <div className="bg-lightGray text-white text-center py-10 relative">
-      <p className="text-lg">ما الجديد...؟</p>
-      <h2 className="font-bold text-2xl">
-        ألبوم صور خدماتنا<span className="text-red">.</span>
-      </h2>
-      <div className="absolute w-16 h-24 top-6 right  border-2 border-red opacity-80"></div>
+    <div className="bg-lightGray text-center py-10 relative">
+      <Title title="ما الجديد...؟" text="ألبوم صور خدماتنا" />
       <div className="flex container mt-10">
         <div className="w-2/4 ml-4 ">
           <Image
