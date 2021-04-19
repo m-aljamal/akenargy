@@ -3,7 +3,7 @@ import sitelogo from "../../../icons/sitelogo.svg";
 
 export const SiteMapLinks = () => {
   return (
-    <div className="mt-20 text-white flex justify-between ">
+    <div className="mt-20 text-white flex justify-between pb-8">
       <div className="flex">
         <img src={sitelogo} alt="logo" className="w-20 ml-3" />
         <div>
