@@ -4,7 +4,7 @@ import BackgroundImage from "gatsby-background-image";
 import { Title } from "../../shared/Title";
 import { feedback } from "../../constant/feedback";
 import { SingleFeedback } from "./SingleFeedback";
-import man from "../../../images/feedback/man.webp";
+import man from "../../../images/feedback/man.png";
 export const Feedback = () => {
   const { image } = useStaticQuery(graphql`
     {
