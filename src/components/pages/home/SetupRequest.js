@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import electric from "../../../icons/electric.svg";
 import { Input } from "./Input";
 import { Button } from "../../shared/Button";
@@ -14,17 +14,15 @@ export const SetupRequest = () => {
         <img src={electric} alt="electric" className="w-14" />
       </div>
       <div className="bg-white">
-        <form
-          action="https://getform.io/f/f0d30d4e-9edf-4cd8-a221-adb53c99e10d"
-          method="POST"
-        >
-          <Input text="الاسم والكنية" />
-          <Input text="رقم الهاتف" />
-          <Input text="المنطقة" />
-          <Input text="العنوان بالتفصيل" />
+        <form action="https://formspree.io/f/xknkgebk" method="POST">
+          <Input text="الاسم والكنية" name="name" />
+          <Input text="رقم الهاتف" name="phoneNumber" />
+          <Input text="المنطقة" name="city" />
+          <Input text="العنوان بالتفصيل" name="address" />
           <div className="px-8 mb-4">
             <textarea
               type="text"
+              name="notes"
               placeholder="ملاحظة"
               className=" w-full focus:outline-none p-4 border-b-2 border-gray border-opacity-70"
             />

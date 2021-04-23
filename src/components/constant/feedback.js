@@ -1,6 +1,6 @@
-import first from "../../images/feedback/1.jpg";
-import secound from "../../images/feedback/2.jpg";
-import third from "../../images/feedback/3.jpg";
+import first from "../../images/feedback/1.jpeg";
+import secound from "../../images/feedback/2.jpeg";
+import third from "../../images/feedback/3.png";
 export const feedback = [
   {
     text:
