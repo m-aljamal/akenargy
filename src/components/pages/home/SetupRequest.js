@@ -14,7 +14,10 @@ export const SetupRequest = () => {
         <img src={electric} alt="electric" className="w-14" />
       </div>
       <div className="bg-white">
-        <form>
+        <form
+          action="https://getform.io/f/f0d30d4e-9edf-4cd8-a221-adb53c99e10d"
+          method="POST"
+        >
           <Input text="الاسم والكنية" />
           <Input text="رقم الهاتف" />
           <Input text="المنطقة" />
