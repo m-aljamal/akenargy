@@ -18,7 +18,7 @@ export const links = [
     link: "/about",
   },
   {
-    arText: "بوابة المشترك",
+    arText: "بوابة المشترك ",
     link: "/news",
   },
 

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { Image } from "./Image";
 import { Button } from "../../shared/Button";
 import { Title } from "../../shared/Title";
+
 export const ImagesSection = () => {
   const { images } = useStaticQuery(graphql`
     {
@@ -21,7 +22,7 @@ export const ImagesSection = () => {
     <div className="bg-lightGray text-center py-10 relative">
       <Title title="ما الجديد...؟" text="ألبوم صور خدماتنا" />
       <div className="flex container mt-10">
-        <div className="w-2/4 ml-4 ">
+        <div className="w-2/4 ml-4 " data-sal="slide-up">
           <Image
             image={images.nodes[2].childImageSharp.fluid}
             text="إعادة تأهيل محطة الراعي"
@@ -31,8 +32,9 @@ export const ImagesSection = () => {
             linkStyle="w-16"
           />
         </div>
+
         <div className="w-2/4">
-          <div className="flex">
+          <div className="flex" data-sal="slide-down">
             <Image
               image={images.nodes[1].childImageSharp.fluid}
               text="إعادة تأهيل محطة الراعي"
@@ -51,18 +53,21 @@ export const ImagesSection = () => {
               linkStyle="w-8"
             />
           </div>
-
-          <Image
-            image={images.nodes[3].childImageSharp.fluid}
-            text="إعادة تأهيل محطة الراعي"
-            link="#"
-            options="mt-3"
-            textStyle="text-lg"
-            linkStyle="w-12"
-          />
+          <div data-sal="slide-left">
+            <Image
+              image={images.nodes[3].childImageSharp.fluid}
+              text="إعادة تأهيل محطة الراعي"
+              link="#"
+              options="mt-3"
+              textStyle="text-lg"
+              linkStyle="w-12"
+            />
+          </div>
         </div>
       </div>
-      <Button text="مشاهدة جميع الصور" otherStyles="mt-8 w-48" />
+      <div data-sal="fade">
+        <Button text="مشاهدة جميع الصور" otherStyles="mt-8 w-48" />
+      </div>
     </div>
   );
 };

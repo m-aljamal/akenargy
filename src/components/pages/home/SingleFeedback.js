@@ -2,7 +2,7 @@ import React from "react";
 import noteIcon from "../../../icons/note_icon.svg";
 export const SingleFeedback = ({ data }) => {
   return (
-    <div>
+    <div data-sal="zoom-in" data-sal-duration="1000">
       <div className="bg-white mt-24 p-4 border-r-2 border-l-2 border-b-2 border-red">
         <div className="flex items-end mtop">
           <img src={noteIcon} alt="note icon" className="w-10" />

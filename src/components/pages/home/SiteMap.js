@@ -7,7 +7,13 @@ export const SiteMap = () => {
   return (
     <div className="bg-black">
       <div className="container">
-        <div className="grid grid-cols-3 bg-lightGray py-4">
+        <div
+          className="grid grid-cols-3 bg-lightGray py-4"
+          data-sal="flip-up"
+          data-sal-easing="easeOutQuad"
+          data-sal-delay="300"
+          data-sal-duration="1000"
+        >
           {siteMap.map((s, i) => (
             <SiteMapInfo data={s} key={i} />
           ))}

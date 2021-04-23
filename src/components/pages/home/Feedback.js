@@ -31,7 +31,13 @@ export const Feedback = () => {
               <SingleFeedback data={f} key={i} />
             ))}
           </div>
-          <div className="bg-red relative py-3">
+          <div
+            className="bg-red relative py-3"
+            data-sal="flip-down"
+            data-sal-easing="easeOutQuad"
+            data-sal-delay="300"
+            data-sal-duration="1000"
+          >
             <img src={man} className="w-48 absolute bottom-0" />
             <div className="justify-between items-center flex text-white">
               <div className="mr-56 border-r-4 border-white pr-4 ">

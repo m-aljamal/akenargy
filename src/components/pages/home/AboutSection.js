@@ -2,6 +2,7 @@ import React from "react";
 import { boxes } from "../../constant/aboutBoxes";
 import { Box } from "./Box";
 import { SetupRequest } from "./SetupRequest";
+
 export const AboutSection = () => {
   return (
     <div className="bg-black pt-14">
@@ -28,6 +29,7 @@ export const AboutSection = () => {
             ))}
           </div>
         </div>
+
         <div className="xl:w-1/4 lg:w-2/5 md:w-2/4 transform -translate-y-36">
           <SetupRequest />
         </div>
