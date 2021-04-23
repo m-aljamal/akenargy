@@ -24,7 +24,7 @@ export const ImagesSection = () => {
       <div className="flex container mt-10">
         <div className="w-2/4 ml-4 " data-sal="slide-up">
           <Image
-            image={images.nodes[2].childImageSharp.fluid}
+            image={images.nodes[3].childImageSharp.fluid}
             text="إعادة تأهيل محطة الراعي"
             link="#"
             options="h-full"
@@ -55,7 +55,7 @@ export const ImagesSection = () => {
           </div>
           <div data-sal="slide-left">
             <Image
-              image={images.nodes[3].childImageSharp.fluid}
+              image={images.nodes[2].childImageSharp.fluid}
               text="إعادة تأهيل محطة الراعي"
               link="#"
               options="mt-3"
