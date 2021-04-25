@@ -23,9 +23,9 @@ export const Hero = () => {
       className="heroImg"
     >
       <div className="container mx-auto">
-        <div className="bg-white bg-opacity-80 w-80 absolute bottom-1/4  p-5 rounded-lg ">
+        <div className="bg-white bg-opacity-80 sm:w-80 w-64 absolute bottom-1/4  p-5 rounded-lg text-justify ">
           <div className="bg-red w-14 h-0.5"></div>
-          <h1 className="font-bold text-3xl tracking-wide mt-3">
+          <h1 className="font-bold sm:text-3xl text-xl tracking-wide mt-3">
             هدف
             <span className="text-red"> الشركة</span>
           </h1>

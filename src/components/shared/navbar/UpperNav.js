@@ -3,8 +3,8 @@ import { socialLink, contacts } from "../../constant/links";
 export const UpperNav = () => {
   return (
     <div className="bg-black p-2">
-      <div class="container flex justify-between items-center	">
-        <div className="flex">
+      <div class="container flex md:justify-between items-center justify-center	">
+        <div className=" md:flex hidden ">
           {contacts.map((c, i) => (
             <a
               className={`px-2.5 text-sm  ${
@@ -19,12 +19,13 @@ export const UpperNav = () => {
             </a>
           ))}
         </div>
-        <div className="flex">
+        <div className="flex ">
           {socialLink.map((s, i) => (
             <a
-              className={`px-5 border-l-2 border-red border-opacity-75 ${
-                i === 0 && "border-r-2"
-              }`}
+              className={`md:px-5 md:border-l-2 border-red border-opacity-75
+               bg-lightRed bg-opacity-25 md:bg-black m-2 md:m-0 p-2 rounded-lg md:rounded-none md:p-0 ${
+                 i === 0 && "md:border-r-2"
+               }`}
               href={s.link}
               key={i}
             >
