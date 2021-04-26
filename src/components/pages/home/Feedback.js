@@ -5,6 +5,8 @@ import { Title } from "../../shared/Title";
 import { feedback } from "../../constant/feedback";
 import { SingleFeedback } from "./SingleFeedback";
 import man from "../../../images/feedback/man.png";
+import Slider from "react-slick";
+
 export const Feedback = () => {
   const { image } = useStaticQuery(graphql`
     {
@@ -17,6 +19,24 @@ export const Feedback = () => {
       }
     }
   `);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
+  };
   return (
     <BackgroundImage
       Tag="div"
@@ -26,10 +46,13 @@ export const Feedback = () => {
       <div className="  container h-full pt-10 ">
         <Title title="ماذا قالو عنا...؟" text="توصيات وشهادات" />
         <div className=" h flex flex-col justify-between">
-          <div className="grid grid-cols-3   gap-4">
-            {feedback.map((f, i) => (
-              <SingleFeedback data={f} key={i} />
-            ))}
+          {/* className="grid grid-cols-3   gap-4" */}
+          <div>
+            <Slider {...settings}>
+              {feedback.map((f, i) => (
+                <SingleFeedback data={f} key={i} index={i} />
+              ))}
+            </Slider>
           </div>
           <div
             className="bg-red relative py-3"
