@@ -52,3 +52,46 @@ body {
     right: 45%;
   }
 }
+.slick-prev,
+.slick-next {
+  top: 118% !important;
+  background-color: rgb(228, 115, 94) !important;
+  width: 60px !important;
+  height: 40px !important;
+}
+.slick-next {
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+.slick-prev {
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}
+
+.slick-next {
+  right: 35% !important;
+}
+
+.slick-prev {
+  left: 35% !important;
+}
+
+@media (max-width: 480px) {
+  .slick-next {
+    right: 25% !important;
+  }
+
+  .slick-prev {
+    left: 25% !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .d-non {
+    display: none;
+  }
+}
+
+.resNav {
+  bottom: -228px;
+}

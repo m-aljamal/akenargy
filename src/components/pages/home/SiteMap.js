@@ -8,37 +8,43 @@ export const SiteMap = () => {
     <div className="bg-black">
       <div className="container">
         <div
-          className="grid grid-cols-3 bg-lightGray py-4"
+          className="grid md:grid-cols-3 bg-lightGray py-4"
           data-sal="flip-up"
           data-sal-easing="easeOutQuad"
           data-sal-delay="300"
           data-sal-duration="1000"
         >
           {siteMap.map((s, i) => (
-            <SiteMapInfo data={s} key={i} />
+            <SiteMapInfo data={s} key={i} index={i} />
           ))}
         </div>
         <SiteMapLinks />
       </div>
       <div className="bg-lightGray w-full py-5">
-        <div className="container flex text-white">
+        <div className="container flex text-white items-center justify-between">
           <div>
-            <h2 className="font-bold text-2xl">تابعونا عبر</h2>
-            <p className="text-xl">صفحات التواصل الاجتماعي</p>
+            <h2 className="font-bold md:text-2xl text-xl">تابعونا عبر</h2>
+            <p className="md:text-xl text-lg ">صفحات التواصل الاجتماعي</p>
           </div>
-          <div className="flex mr-8 items-center ">
+          <div className="flex mr-8 items-center flex-wrap ">
             {socialLink.map((s, i) => (
-              <a href={s.link} className="ml-8 bg-black p-3">
-                <img src={s.icon} alt={s.link} className="w-8" />
+              <a
+                key={i}
+                href={s.link}
+                className={`${
+                  i !== socialLink.length - 1 && "ml-8"
+                }  bg-black p-3 md:w-12  w-10 mt-2`}
+              >
+                <img src={s.icon} alt={s.link} className="w-full" />
               </a>
             ))}
           </div>
-          <div className="mr-auto flex items-center">
-            <div className="ml-8 ">
+          <div className="mr-auto xl:flex items-center hidden lg:block">
+            <div className="ml-8 lg:mb-2">
               <p className="text-xl font-bold">اشترك عبر</p>
               <p className="text-lg">القائمة البريدية</p>
             </div>
-            <div>
+            <div className="flex ">
               <input
                 placeholder="ادخل اﻹيميل"
                 className=" bg-black text-white p-1 focus:outline-none border-2 rounded-r-lg border-red"

@@ -20,7 +20,7 @@ export const Feedback = () => {
     }
   `);
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -32,7 +32,7 @@ export const Feedback = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
     ],
@@ -46,7 +46,6 @@ export const Feedback = () => {
       <div className="  container h-full pt-10 ">
         <Title title="ماذا قالو عنا...؟" text="توصيات وشهادات" />
         <div className=" h flex flex-col justify-between">
-          {/* className="grid grid-cols-3   gap-4" */}
           <div>
             <Slider {...settings}>
               {feedback.map((f, i) => (
@@ -55,21 +54,29 @@ export const Feedback = () => {
             </Slider>
           </div>
           <div
-            className="bg-red relative py-3"
+            className="bg-red relative py-3  d-non"
             data-sal="flip-down"
             data-sal-easing="easeOutQuad"
             data-sal-delay="300"
             data-sal-duration="1000"
           >
-            <img src={man} className="w-48 absolute bottom-0" />
+            <img
+              src={man}
+              className="lg:w-48 md:w-36 sm:w-48 absolute bottom-0"
+            />
             <div className="justify-between items-center flex text-white">
               <div className="mr-56 border-r-4 border-white pr-4 ">
-                <p className="text-2xl">هل تحتاج اي خدمة... !</p>
-                <p className="font-bold text-2xl mt-2">
+                <p className="lg:text-2xl text-lg">هل تحتاج اي خدمة... !</p>
+                <p className="font-bold lg:text-2xl mt-2 text-base">
                   لا تتردد يمكنك اﻹتصال بنا في أي وقت.
                 </p>
               </div>
-              <p className="border-2 ml-12 py-2 px-24 rounded-lg font-bold text-lg">
+              <p
+                className="border-2 lg:ml-12 py-2 lg:px-24 px-10 ml-4 rounded-lg font-bold lg:text-lg text-base
+              md:block
+              hidden
+              "
+              >
                 تواصل معنا
               </p>
             </div>

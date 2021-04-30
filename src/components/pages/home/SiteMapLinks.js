@@ -3,7 +3,7 @@ import sitelogo from "../../../icons/sitelogo.svg";
 
 export const SiteMapLinks = () => {
   return (
-    <div className="mt-20 text-white flex justify-between pb-8">
+    <div className="mt-20 text-white flex md:justify-between justify-center pb-8">
       <div className="flex">
         <img src={sitelogo} alt="logo" className="w-20 ml-3" />
         <div>
@@ -21,7 +21,7 @@ export const SiteMapLinks = () => {
           </p>
         </div>
       </div>
-      <div>
+      <div className="hidden md:block">
         <h2 className="font-bold text-xl">روابط هامة</h2>
         <div className="text-lg mt-3">
           <p>عن الشركة</p>
@@ -29,11 +29,11 @@ export const SiteMapLinks = () => {
           <p className="mt-7"> أخبارنا</p>
         </div>
       </div>
-      <div className="text-lg mt-10">
+      <div className="text-lg mt-10 hidden md:block">
         <p>الطاقة المتجددة</p>
         <p className="mt-7">الوظائف</p>
       </div>
-      <div>
+      <div className="hidden lg:block">
         <h2 className="font-bold text-xl">خدماتنا</h2>
         <div className="text-lg mt-3">
           <p>اشتراك جديد</p>

@@ -29,7 +29,7 @@ export const ImagesSection = () => {
             link="#"
             options="h-full"
             textStyle="text-xl"
-            linkStyle="w-16"
+            linkStyle="md:w-16 w-8"
           />
         </div>
 
@@ -40,8 +40,8 @@ export const ImagesSection = () => {
               text="إعادة تأهيل محطة الراعي"
               link="#"
               options="w-2/4"
-              textStyle="text-md"
-              linkStyle="w-8"
+              textStyle="md:text-md text-xs"
+              linkStyle="md:w-8 w-4"
             />
 
             <Image
@@ -49,8 +49,8 @@ export const ImagesSection = () => {
               text="إعادة تأهيل محطة الراعي"
               link="#"
               options="w-2/4 mr-3"
-              textStyle="text-md"
-              linkStyle="w-8"
+              textStyle="md:text-md text-xs"
+              linkStyle="md:w-8 w-4"
             />
           </div>
           <div data-sal="slide-left">
@@ -59,8 +59,8 @@ export const ImagesSection = () => {
               text="إعادة تأهيل محطة الراعي"
               link="#"
               options="mt-3"
-              textStyle="text-lg"
-              linkStyle="w-12"
+              textStyle="md:text-lg text-xs"
+              linkStyle="md:w-12 w-8"
             />
           </div>
         </div>
